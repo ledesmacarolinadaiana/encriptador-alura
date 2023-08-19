@@ -27,8 +27,8 @@ function recuperarTexto(){
 }
 
 function ocultarAdelante(){
-    muñeco.classList.add("ocultar");
-    container.classList.add("ocultar");
+    muñeco.classList.add(".ocultar");
+    container.classList.add(".ocultar");
 }
 
 function encriptarTexto(mensaje){
