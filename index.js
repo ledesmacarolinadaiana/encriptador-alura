@@ -1,9 +1,9 @@
-var btnEncriptar = document.querySelector(".btn-encriptar");
-var btnDesencriptar = document.querySelector(".btn-desencriptar");
-var muñeco = document.querySelector(".muñeco");
-var mensajeEncriptado = document.querySelector(".mensaje-encriptado");
-var encriptadoP = document.querySelector(".parrafo");
-var resultado = document.querySelector(".texto-resultado");
+const btnEncriptar = document.querySelector(".btn-encriptar");
+const btnDesencriptar = document.querySelector(".btn-desencriptar");
+const muñeco = document.querySelector(".muneco");
+const mensajeEncriptado = document.querySelector(".mensaje-encriptado");
+const encriptadoP = document.querySelector(".parrafo");
+const resultado = document.querySelector(".texto-resultado");
 
 btnEncriptar.onclick = encriptar();
 btnDesencriptar.onclick = desencriptar();
