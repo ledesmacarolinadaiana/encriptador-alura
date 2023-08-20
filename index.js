@@ -4,31 +4,32 @@ const muñeco = document.querySelector(".muneco");
 const mensajeEncriptado = document.querySelector(".mensaje-encriptado");
 const encriptadoP = document.querySelector(".parrafo");
 const resultado = document.querySelector(".texto-resultado");
+const container = document.querySelector(".container");
 
 btnEncriptar.onclick = encriptar();
 btnDesencriptar.onclick = desencriptar();
 
 
 function encriptar(){
-    ocultarAdelante();
     var textoEncriptado = recuperarTexto()
     resultado.textContent = encriptarTexto(textoEncriptado);
+    ocultarAdelante();
 }
 
 function desencriptar(){
-    ocultarAdelante();
     var textoEncriptado = recuperarTexto()
     resultado.textContent = desencriptarTexto(textoEncriptado);
+    ocultarAdelante();
 }
 
 function recuperarTexto(){
-    var textoEncriptado = document.querySelector(".textoEncriptado")
+    var textoEncriptado = document.querySelector(".text-area")
     return textoEncriptado.value
 }
 
 function ocultarAdelante(){
-    muñeco.classList.add(".ocultar");
-    container.classList.add(".ocultar");
+    muñeco.classList.add("ocultar");
+    container.classList.add("ocultar");
 }
 
 function encriptarTexto(mensaje){
@@ -94,8 +95,8 @@ function encriptarTexto(mensaje){
 
   }
   
-  const btnCopiar = document.querySelector(".btn-copiar");
-    btnCopiar.addEventListener("click", copiar = () => {
+  const btnCopiar = document.querySelector(".btnCopiar");
+    btnCopiar.addEventListener("click",() => {
     var contenido = document.querySelector(".texto-resultado").textContent;
     navigator.clipboard.writeText(contenido);
     console.log("hola");
