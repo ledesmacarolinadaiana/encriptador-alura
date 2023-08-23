@@ -6,20 +6,20 @@ const encriptadoP = document.querySelector(".parrafo");
 const resultado = document.querySelector(".texto-resultado");
 const container = document.querySelector(".container");
 
-btnEncriptar.onclick = encriptar();
-btnDesencriptar.onclick = desencriptar();
+btnEncriptar.onclick = encriptar;
+btnDesencriptar.onclick = desencriptar;
 
 
 function encriptar(){
     var textoEncriptado = recuperarTexto()
     resultado.textContent = encriptarTexto(textoEncriptado);
-    ocultarAdelante();
+    
 }
 
 function desencriptar(){
     var textoEncriptado = recuperarTexto()
     resultado.textContent = desencriptarTexto(textoEncriptado);
-    ocultarAdelante();
+    
 }
 
 function recuperarTexto(){
