@@ -12,6 +12,12 @@
     width: 10%;
 }
 
+.alura {
+    width: 10%;
+    height: 7%;
+    top: 5%;
+}
+
 .main-container{
     position: relative;
     width: 100vw;
@@ -25,7 +31,7 @@
     left: 10%;
     top: 10%;
     border: none;
-    color: rgb(43, 113, 226);
+    color: rgb(64, 43, 226); 
     margin-top: 90px;
     text-transform: full size;
     text-align: center;
@@ -66,7 +72,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
-    color: #495057;
+    color: #343434;
     opacity: 0.8;
     flex: none;
     order: 1;
